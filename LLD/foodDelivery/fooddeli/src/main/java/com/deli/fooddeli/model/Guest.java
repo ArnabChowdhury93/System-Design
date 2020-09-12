@@ -1,3 +1,5 @@
+package com.deli.fooddeli.model;
+
 public class Guest extends Customer{
-    Account
+    public Account createAccount();
 }
