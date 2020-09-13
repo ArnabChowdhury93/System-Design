@@ -3,6 +3,9 @@ package com.deli.fooddeli.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import main.java.com.deli.fooddeli.model.Order;
+import main.java.com.deli.fooddeli.model.Payment;
+
 
 public  class Cart {
 
@@ -41,6 +44,7 @@ public  class Cart {
     }
 
     public boolean checkout(Order order){
-        
+        Payment payment = new Payment();
+        return order.makePayment(payment);
     }
 }
