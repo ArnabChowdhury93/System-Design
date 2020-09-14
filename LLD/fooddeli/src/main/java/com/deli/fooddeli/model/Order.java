@@ -11,9 +11,11 @@ public class Order {
     private OrderStatus status;
     private List<FoodItem> items;
     private Date orderDate;
+    private NotificationService notificationService;
+
 
     public boolean makePayment(Payment payment){
-        payment.processPayment(billingInfo, amount);
+        return payment.processPayment(billingInfo, amount);
     }
 
     
