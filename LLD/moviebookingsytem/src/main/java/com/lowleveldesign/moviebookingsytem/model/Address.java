@@ -1,7 +1,5 @@
 public class Address {
     private String street;
-    private String city;
+    private City city;
     private String postalCode;
-    private String state;
-    private String country;
 }
